@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Variables -->
+    <item
+        android:id="@+id/action_variables"
+        android:showAsAction="always"
+        android:title="@string/action_variables"/>
+
+    <!-- Memory -->
+    <item
+        android:id="@+id/action_memory"
+        android:showAsAction="always"
+        android:title="@string/action_memory"/>
+    <!-- Functions -->
+    <item
+        android:id="@+id/action_functions"
+        android:showAsAction="always"
+        android:title="@string/action_functions"/>
+    <!-- Settings -->
+    <item
+        android:id="@+id/action_settings"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

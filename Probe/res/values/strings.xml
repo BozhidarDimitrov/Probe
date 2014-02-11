@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Probe</string>
+    <string name="ActionBarTest_label">UltCalc</string>
+    <string name="ActionBarVariablesTest_label">Variables</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="action_variables">Var</string>
+    <string name="action_memory">Mem</string>
+    <string name="action_functions">Func</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="action_new_variable">New</string>
+    <string name="action_delete">Del</string>
+    <string name="action_select_all">Select All</string>
+    <string name="action_unselect_all">Unselect All</string>
+    <string name="action_new_category">New Cat</string>
+    <string name="action_delete_category">Del Cat</string>
+
+</resources>

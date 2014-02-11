@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:gravity="right"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/tv1EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/writeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write" />
+
+    <Button
+        android:id="@+id/editEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit" />
+    
+    <view class="com.probe.probe.EditTextProbe$MyEditText"
+        android:id="@+id/myEditText_EditTextProbe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+    
+    <TextView
+        android:id="@+id/tv2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/write2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write" />
+    
+    <Button
+        android:id="@+id/edit2EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit" />
+
+</LinearLayout>
