@@ -13,7 +13,8 @@ public class Menu extends ListActivity{
 	String[] classes = 
 		{"MainActivity" , "FragmentLayout" , "CalculatorLayout", "EditTextProbe", "BorderlessButtons", 
 			"Buttons", "ScreenSize", "ActionBarTest", "ListActivityTest", "calculator.VariablesActivity",
-			"calculator.MemoryActivity", "calculator.UserFunctionsActivity", "ViewPagerActivity", "ViewPagerActivityNestedFragments"};
+			"calculator.MemoryActivity", "calculator.UserFunctionsActivity", "ViewPagerActivity", "ViewPagerActivityNestedFragments",
+			"PassingDataBetweenFragments"};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

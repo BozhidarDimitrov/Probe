@@ -42,7 +42,7 @@ public class MemoryListFragment extends AbstractListFragment implements
 
 	@Override
 	protected int getOptionsMenuId() {
-		return R.menu.variables_menu;
+		return R.menu.basic_list_fragment_menu;
 	}
 
 	@Override

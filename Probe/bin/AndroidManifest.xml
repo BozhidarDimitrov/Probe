@@ -221,6 +221,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.probe.probe.PassingDataBetweenFragments"
+            android:exported="false"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PASSINGDATABETWEENFRAGMENTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

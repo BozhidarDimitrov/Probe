@@ -12,10 +12,10 @@
     <string name="action_functions">Func</string>
     <string name="action_settings">Settings</string>
     
-    <string name="action_new_variable">New</string>
-    <string name="action_delete">Del</string>
-    <string name="action_select_all">Select All</string>
-    <string name="action_unselect_all">Unselect All</string>
+    <string name="basic_list_fragment_menu_action_new">New</string>
+    <string name="basic_list_fragment_menu_action_delete">Del</string>
+    <string name="basic_list_fragment_menu_action_select_all">Select All</string>
+    <string name="basic_list_fragment_menu_action_unselect_all">Unselect All</string>
     <string name="action_new_category">New Cat</string>
     <string name="action_delete_category">Del Cat</string>
 

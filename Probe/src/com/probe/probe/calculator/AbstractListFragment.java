@@ -83,7 +83,6 @@ public abstract class AbstractListFragment extends ListFragment implements
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		
-		//Log.d(TAG,this + ": onActivityCreated()->getAdapter() ");
 		mAdapter = new MySimpleCursorAdapter(
 				getActivity(),
 				getRowLayoutId(),
@@ -93,10 +92,8 @@ public abstract class AbstractListFragment extends ListFragment implements
 				0,
 				getListener());
 		
-		//Log.d(TAG,this + ": onActivityCreated()->setListAdapter() ");
 		setListAdapter(mAdapter);
 		
-		//Log.d(TAG,this + ": onActivityCreated()->initLoader() ");
 		getLoaderManager().initLoader(0, null, this);
 	}
 
@@ -160,14 +157,14 @@ public abstract class AbstractListFragment extends ListFragment implements
 	public boolean onOptionsItemSelected(MenuItem item) {
 		
 		switch (item.getItemId()) {
-		case R.id.variables_menu_action_new_variable:
+		case R.id.basic_list_fragment_menu_action_new:
 			//TEST
 			ContentValues cv = new ContentValues();
 			Random r = new Random();
 			cv.put(getNameForKeyColumn(), r.nextInt(10));
 			mDbFragment.insert(getContentUriForTable(), cv); //test
 			return true;
-		case R.id.variables_menu_action_delete:
+		case R.id.basic_list_fragment_menu_action_delete:
 			
 			String selection = getNameForKeyColumn() + " = ?";
 			String or = " OR ";
@@ -198,13 +195,13 @@ public abstract class AbstractListFragment extends ListFragment implements
 				checkboxState.clear();
 			}
 			return true;
-		case R.id.variables_menu_action_select_all:
+		case R.id.basic_list_fragment_menu_action_select_all:
 			for (int i = 0; i < getListView().getCount(); i++) {
 				checkboxState.put(i, true);
 			}
 			getListView().invalidateViews();
 			return true;
-		case R.id.variables_menu_action_unselect_all:
+		case R.id.basic_list_fragment_menu_action_unselect_all:
 			for (int i = 0; i < getListView().getCount(); i++) {
 				checkboxState.put(i, false);
 			}

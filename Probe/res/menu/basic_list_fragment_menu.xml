@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-
+    
     <!--New Variable -->
     <item
-        android:id="@+id/action_new_variable"
-        android:showAsAction="always"
+        android:id="@+id/basic_list_fragment_menu_action_new"
+        android:showAsAction="ifRoom"
         android:title="@string/basic_list_fragment_menu_action_new"/>
 
-    <!-- Memory -->
+    <!-- Delete -->
     <item
-        android:id="@+id/action_delete"
-        android:showAsAction="always"
+        android:id="@+id/basic_list_fragment_menu_action_delete"
+        android:showAsAction="ifRoom"
         android:title="@string/basic_list_fragment_menu_action_delete"/>
-    <!-- Functions -->
+    <!-- Select all -->
     <item
-        android:id="@+id/action_select_all"
+        android:id="@+id/basic_list_fragment_menu_action_select_all"
         android:showAsAction="never"
         android:title="@string/basic_list_fragment_menu_action_select_all"/>
-    <!-- Settings -->
+    <!-- Unselect all -->
     <item
-        android:id="@+id/action_unselect_all"
+        android:id="@+id/basic_list_fragment_menu_action_unselect_all"
         android:showAsAction="never"
         android:title="@string/basic_list_fragment_menu_action_unselect_all"/>
 

@@ -24,6 +24,7 @@ public class UserFunctionsListFragment extends AbstractListFragment implements
 				DbContract.UserFunctions.COLUMN_VALUE
 		};
 	}
+	
 	@Override
 	protected int[] getToArray() {
 		return new int[]{
@@ -44,7 +45,7 @@ public class UserFunctionsListFragment extends AbstractListFragment implements
 
 	@Override
 	protected int getOptionsMenuId() {
-		return R.menu.variables_menu;
+		return R.menu.basic_list_fragment_menu;
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class VariablesListFragment extends AbstractListFragment implements
 				DbContract.Variables.COLUMN_VALUE
 		};
 	}
-
+	
 	@Override
 	protected int[] getToArray() {
 		return new int[]{
@@ -31,7 +31,7 @@ public class VariablesListFragment extends AbstractListFragment implements
 				R.id.variables_row_item_button_value
 		};
 	}
-
+	
 	@Override
 	protected int getLayoutId() {
 		return R.layout.list_fragment_only_list;
@@ -44,7 +44,7 @@ public class VariablesListFragment extends AbstractListFragment implements
 
 	@Override
 	protected int getOptionsMenuId() {
-		return R.menu.variables_menu;
+		return R.menu.basic_list_fragment_menu;
 	}
 
 	@Override
