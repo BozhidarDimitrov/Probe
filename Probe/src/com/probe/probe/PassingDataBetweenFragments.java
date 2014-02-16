@@ -7,20 +7,17 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.util.Log;
 
 public class PassingDataBetweenFragments extends Activity implements
 		DataSource,
 		DataSender {
 	
 	private static final String CONTENT_FRAGMENT_TAG = "content_fragment";
-	private static final String TAG = PassingDataBetweenFragments.class.getSimpleName();
+	//private static final String TAG = PassingDataBetweenFragments.class.getSimpleName();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		Log.d(TAG, "OnCreate()");
 		
 		FragmentManager fm = getFragmentManager();
 		Fragment contentFragment = (Fragment) fm.findFragmentByTag(CONTENT_FRAGMENT_TAG);
@@ -32,8 +29,6 @@ public class PassingDataBetweenFragments extends Activity implements
 					contentFragment, 
 					CONTENT_FRAGMENT_TAG).commit();
 		}
-		
-		Log.d(TAG, "OnCreate() end");
 		
 	}
 

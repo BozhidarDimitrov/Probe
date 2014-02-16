@@ -232,6 +232,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.probe.probe.PassingDataBetweenFragmentsRuntimeChanges"
+            android:exported="false"
+            android:label="@string/app_name" >
+            
+        </activity>
     </application>
 
 </manifest>
