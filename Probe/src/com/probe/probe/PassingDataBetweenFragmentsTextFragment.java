@@ -128,5 +128,11 @@ public class PassingDataBetweenFragmentsTextFragment extends Fragment implements
 		}
 	}
 	
+	public String getTextViewText() {
+		return this.tv.getText().toString();
+	}
 	
+	public void setTextViewText(String text) {
+		this.tv.setText(text);
+	}
 }

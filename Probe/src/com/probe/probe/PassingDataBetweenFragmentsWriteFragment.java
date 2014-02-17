@@ -120,5 +120,13 @@ public class PassingDataBetweenFragmentsWriteFragment extends Fragment implement
 			sender.sendData(et.getText().toString());
 		}
 	}
+	
+	public String getEditTextText() {
+		return this.et.getText().toString();
+	}
+	
+	public void setEditTextText(String text) {
+		this.et.setText(text);
+	}
 
 }
