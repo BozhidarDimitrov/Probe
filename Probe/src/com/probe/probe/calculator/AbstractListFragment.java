@@ -1,6 +1,7 @@
 package com.probe.probe.calculator;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import com.probe.probe.R;
@@ -169,7 +170,7 @@ public abstract class AbstractListFragment extends ListFragment implements
 			String selection = getNameForKeyColumn() + " = ?";
 			String or = " OR ";
 			StringBuilder finalSelection = new StringBuilder();
-			ArrayList<String> arguments = new ArrayList<String>();
+			List<String> arguments = new ArrayList<String>();
 			Cursor c = mAdapter.getCursor();
 			
 			//an element in the list has the same list, checkboxState, cursor position

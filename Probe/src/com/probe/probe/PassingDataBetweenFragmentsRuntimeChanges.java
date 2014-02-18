@@ -146,13 +146,12 @@ public class PassingDataBetweenFragmentsRuntimeChanges extends Activity implemen
 			//do nothing
 		} else {
 			FragmentManager fm = getFragmentManager();
-			PassingDataBetweenFragmentsWriteFragment writeFragment = 
-					new PassingDataBetweenFragmentsWriteFragment();
+			PassingDataBetweenFragmentsWriteFragment writeFragment = new PassingDataBetweenFragmentsWriteFragment();
 			writeFragment.setArguments(getIntent().getExtras());
-			fm.beginTransaction().
-			replace(R.id.passing_data_between_fragments_runtime_changes_frame1, 
-					writeFragment,
-					WRITE_FRAGMENT_TAG).commit();
+			fm.beginTransaction()
+					.replace(
+							R.id.passing_data_between_fragments_runtime_changes_frame1,
+							writeFragment, WRITE_FRAGMENT_TAG).commit();
 		}
 	}
 
