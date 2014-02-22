@@ -267,6 +267,13 @@
             android:label="@string/app_name" >
             
         </activity>
+        
+        <activity
+            android:name="com.probe.probe.FragmentReplacingContainterWithFragments"
+            android:exported="false"
+            android:label="@string/app_name" >
+            
+        </activity>
     </application>
 
 </manifest>

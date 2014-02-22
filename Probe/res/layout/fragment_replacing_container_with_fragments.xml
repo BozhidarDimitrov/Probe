@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+    
+    <LinearLayout 
+        android:id="@+id/fragment_replacing_container_with_fragments_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="@android:color/holo_green_dark">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:text="TextView"/>
+        
+        <FrameLayout
+            android:id="@+id/fragment_replacing_container_with_fragments_frame1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:background="@android:color/background_dark"
+            >
+            
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/fragment_replacing_container_with_fragments_frame2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:background="@android:color/background_light"
+            >
+            
+        </FrameLayout>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/fragment_replacing_container_with_fragments_button_replace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="replace"/>
+    
+
+</LinearLayout>
