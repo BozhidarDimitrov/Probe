@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:weightSum="100" >
+    
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="B"
+        android:layout_weight="40" />
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_weight="20" >
+    
+        <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="B"
+        android:layout_weight="20" />
+        
+    <FrameLayout
+        android:id="@+id/scrolling_buttons_frame"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60" >
+    	</FrameLayout>
+    
+     <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="B"
+        android:layout_weight="20" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="B"
+        android:layout_weight="40" />
+</LinearLayout>
