@@ -9,10 +9,10 @@
         android:id="@+id/fragment_replacing_container_with_fragments_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="90"
         android:orientation="vertical"
+        android:layout_weight="90"
         android:weightSum="100"
-        android:background="@android:color/holo_green_dark">
+        android:background="@android:color/holo_blue_dark" >
         
         <TextView 
             android:layout_width="wrap_content"
@@ -20,17 +20,24 @@
             android:layout_weight="10"
             android:text="TextView"/>
         
-        <FrameLayout
+        <LinearLayout
             android:id="@+id/fragment_replacing_container_with_fragments_frame1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="45"
+            android:orientation="vertical"
             android:background="@android:color/background_dark"
             >
             
-        </FrameLayout>
+            <FrameLayout 
+                android:id="@+id/blqblq"
+                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"></FrameLayout>
+            
+        </LinearLayout>
         
-        <FrameLayout
+        <FrameLayout 
             android:id="@+id/fragment_replacing_container_with_fragments_frame2"
             android:layout_width="match_parent"
             android:layout_height="0dp"

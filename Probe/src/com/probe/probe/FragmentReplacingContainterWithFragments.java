@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewManager;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class FragmentReplacingContainterWithFragments extends Activity implements 
 		OnClickListener {
@@ -33,7 +37,7 @@ public class FragmentReplacingContainterWithFragments extends Activity implement
 		// Content Fragment initialization
 		//////////////////////
 		Fragment contentFragment = (Fragment) fm.findFragmentByTag(BIG_FRAGMENT_TAG);
-		
+		Log.d("blq", "initialization");
 		if (contentFragment == null) {
 			contentFragment = new ScrollingButtonsFragment();
 			contentFragment.setArguments(getIntent().getExtras());
@@ -42,7 +46,6 @@ public class FragmentReplacingContainterWithFragments extends Activity implement
 					contentFragment, 
 					BIG_FRAGMENT_TAG).commit();
 		}
-		
 	}
 
 	@Override
@@ -52,6 +55,7 @@ public class FragmentReplacingContainterWithFragments extends Activity implement
 		
 		if (fragment == null) {
 			Log.d("blq", "case 1");
+			
 			fragment = (Fragment) fm.findFragmentByTag(SMALL_FRAGMENT_TAG_1);
 			fm.beginTransaction().remove(fragment).commit();
 			
@@ -64,10 +68,17 @@ public class FragmentReplacingContainterWithFragments extends Activity implement
 					R.id.fragment_replacing_container_with_fragments_container, 
 					fragment, 
 					BIG_FRAGMENT_TAG).commit();
+			
 		} else {
 			Log.d("blq", "case 2");
 			
 			fm.beginTransaction().remove(fragment).commit();
+			
+			/*
+			FrameLayout view = (FrameLayout) findViewById(R.id.blqblq);
+			if (view != null) ((ViewManager) view.getParent()).removeView(view);
+			??? In the newer SDKs its (ViewGroup) :) –  Ron Nov 13 '12 at 9:45
+			*/
 			
 			fm.beginTransaction().replace(
 					R.id.fragment_replacing_container_with_fragments_frame1, 
@@ -78,6 +89,7 @@ public class FragmentReplacingContainterWithFragments extends Activity implement
 					R.id.fragment_replacing_container_with_fragments_frame2, 
 					new ScrollingButtonsFragment(), 
 					SMALL_FRAGMENT_TAG_2).commit();
+					
 		}
 		
 	}
