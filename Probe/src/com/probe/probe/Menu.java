@@ -15,7 +15,8 @@ public class Menu extends ListActivity{
 			"Buttons", "ScreenSize", "ActionBarTest", "ListActivityTest", "calculator.VariablesActivity",
 			"calculator.MemoryActivity", "calculator.UserFunctionsActivity", "ViewPagerActivity", "ViewPagerActivityNestedFragments",
 			"PassingDataBetweenFragments", "PassingDataBetweenFragmentsRuntimeChanges", "VariablesListFragmentSmallListActivity",
-			"ResourceManagerActivity", "ScrollingButtonsBig", "ScrollingButtonsSmall", "FragmentReplacingContainterWithFragments"};
+			"ResourceManagerActivity", "ScrollingButtonsBig", "ScrollingButtonsSmall", "FragmentReplacingContainterWithFragments",
+			"NestedFragmentsWorkaround"};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -29,13 +29,12 @@ public class ScreenSize extends Activity{
 		addText("width dp = " + metrics.widthPixels/metrics.density);
 		addText("height dp = " + metrics.heightPixels/metrics.density);
 		
-		double sw = getResources().getConfiguration().smallestScreenWidthDp;
+		int sw = getResources().getConfiguration().smallestScreenWidthDp;
 		addText("sw = " + sw);
 		
 		int orientation = getResources().getConfiguration().orientation;
 		
 		int mode = 0;
-		
 		
 		if (sw >= 600) {
 			if (orientation == Configuration.ORIENTATION_PORTRAIT) {

@@ -14,40 +14,45 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.support.v13.app.FragmentStatePagerAdapter;
 
 public class ViewPagerActivity extends Activity implements 
 		DatabaseAsyncTaskFragmentHolder,
-		AsyncTaskCallbackHolder {
+		AsyncTaskCallbackHolder,
+		OnClickListener{
 	
 	private static final String TAG = ViewPagerActivity.class.getSimpleName();
 	private static final String ASYNC_TASK_FRAGMENT_TAG = "async_task_fragment";
 	
 	private DatabaseAsyncTaskFragment asyncTaskFragment;
+	
+	private Button button;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		Log.d(TAG, "onCreate() begin");
+		setContentView(R.layout.view_pager_activity);
+		MyFragmentStatePagerAdapter adapter = new MyFragmentStatePagerAdapter(getFragmentManager());
+		ViewPager pager = (ViewPager) findViewById(R.id.view_pager_activity_pager);
+		pager.setAdapter(adapter);
 		
+		button = (Button) findViewById(R.id.view_pager_activity_button);
+		button.setOnClickListener(this);
+		
+		/* working
 		setContentView(R.layout.user_functions_main_fragment);
 		
 		MyFragmentStatePagerAdapter adapter = new MyFragmentStatePagerAdapter(getFragmentManager());
 		
 		ViewPager pager = (ViewPager) findViewById(R.id.pager);
 		pager.setAdapter(adapter);
-		/*
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction().add(
-					android.R.id.content,
-					new ViewPagerFragment(),
-					"view_pager").commit();
-		}
 		*/
-		
 		//////////////////////
 		// Task Fragment initialization
 		//////////////////////
@@ -58,8 +63,15 @@ public class ViewPagerActivity extends Activity implements
 			asyncTaskFragment = new DatabaseAsyncTaskFragment();
 			fm.beginTransaction().add(asyncTaskFragment, ASYNC_TASK_FRAGMENT_TAG).commit();
 		}
-		
-		Log.d(TAG, "onCreate() end");
+	}
+	
+	@Override
+	public void onClick(View v) {
+		// b ---------------------------------------------------------------------
+		CharSequence text = "click";
+		Toast toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
+		toast.show();
+		// e ---------------------------------------------------------------------
 	}
 	
 	@Override

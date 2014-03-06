@@ -132,6 +132,7 @@ public class PassingDataBetweenFragmentsRuntimeChanges extends Activity implemen
 	protected void onStop() {
 		super.onStop();
 		Log.d(TAG, intro + " onStop()");
+		
 	}
 
 	@Override
