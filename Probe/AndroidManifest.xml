@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -277,6 +277,13 @@
         
         <activity
             android:name="com.probe.probe.NestedFragmentsWorkaround"
+            android:exported="false"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+        <activity
+            android:name="com.probe.probe.ViewSwitcherTest"
             android:exported="false"
             android:label="@string/app_name" >
             

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@android:color/holo_purple" >
+    
+    <FrameLayout 
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:background="@android:color/holo_blue_dark">
+        
+        <Button 
+            android:id="@+id/view_switcher_test_button_change"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="CHANGE"/>
+        
+    </FrameLayout>
+    
+    <ViewSwitcher 
+        android:id="@+id/view_switcher_test_view_switcher"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="50"
+        android:background="@android:color/holo_red_dark">
+        
+        <FrameLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@android:color/holo_green_dark">
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="FUCK THE POLICE"/>
+        </FrameLayout>
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/darker_gray"
+            android:weightSum="100">
+            
+            <Button 
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:text="BUTTON 1"/>
+            
+            <Button 
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:text="BUTTON 2"/>
+            
+        </LinearLayout>
+    </ViewSwitcher>
+    
+    <FrameLayout 
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:background="@android:color/holo_blue_dark">
+        
+    </FrameLayout>
+    
+</LinearLayout>
