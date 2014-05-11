@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 /**
  * FOR ME:
- * finished, not tested.
+ * finished, tested.
  * Needs work on the onUpgrade method
  * 
  * DbHelper is a SQLiteOpenHelper implemented as a 

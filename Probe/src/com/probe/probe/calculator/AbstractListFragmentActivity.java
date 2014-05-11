@@ -23,12 +23,12 @@ public abstract class AbstractListFragmentActivity extends Activity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+		/*
 		if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
 			finish();
 			return;
 		}
-		
+		*/
 		FragmentManager fm = getFragmentManager();
 		
 		//////////////////////

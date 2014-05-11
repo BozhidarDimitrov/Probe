@@ -24,7 +24,7 @@ public class UltCalcDbProvider extends ContentProvider{
 	private DbHelper mDbHelper;
 	
 	/**
-	 * A UriMatcher instance
+	 * UriMatcher instance
 	 */
 	private static UriMatcher mUriMatcher; // ??? why not final as in sample
 	
@@ -89,7 +89,7 @@ public class UltCalcDbProvider extends ContentProvider{
 	@Override
 	public Uri insert(Uri uri, ContentValues initialValues) {
 		
-		//match URI whit the patterns the provider provide
+		//match URI with the patterns the provider provide
 		int uriMatchValue = mUriMatcher.match(uri);
 		
 		//Check for a full provider URI. Only the full URIs are allowed for inserts

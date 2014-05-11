@@ -52,6 +52,23 @@ public class ViewSwitcherTest extends Activity implements OnClickListener{
 		}
 		
 	}
+	
+	
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		
+		result.append("vs.getheight(): " + viewSwitcher.getHeight());
+	}
+	
+	
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		
+	}
 
 	@Override
 	public void onClick(View v) {
@@ -93,6 +110,18 @@ public class ViewSwitcherTest extends Activity implements OnClickListener{
 				break;
 			}
 			
+			/*
+			switch (viewSwitcher.getNextView().getId()) {
+			case R.id.view_switcher_test_frame1:
+				TextView text = (TextView) findViewById(R.id.view_switcher_test_text_view);
+				text.setText("TEXT SET BEFORE CHANGE");
+				break;
+			case R.id.view_switcher_test_frame2:
+				Button b1 = (Button) findViewById(R.id.view_switcher_test_button_1);
+				b1.setText("CHANGED");
+				break;
+			}
+			*/
 			viewSwitcher.showNext();
 		}
 	}

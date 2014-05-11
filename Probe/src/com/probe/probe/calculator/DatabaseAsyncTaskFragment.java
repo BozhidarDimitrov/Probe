@@ -8,6 +8,10 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 public class DatabaseAsyncTaskFragment extends Fragment {
 
@@ -49,6 +53,27 @@ public class DatabaseAsyncTaskFragment extends Fragment {
 		super.onCreate(savedInstanceState);
 		
 		setRetainInstance(true);
+	}
+	
+	
+
+	/* (non-Javadoc)
+	 * @see android.app.Fragment#onDestroy()
+	 */
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		Log.d("DB_ASYNC_TASK", "onDestroy()");
+	}
+
+	/* (non-Javadoc)
+	 * @see android.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)
+	 */
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		Log.d("DB_ASYNC_TASK", "onCreateView()");
+		return super.onCreateView(inflater, container, savedInstanceState);
 	}
 
 	@Override
