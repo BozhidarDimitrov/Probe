@@ -6,5 +6,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="lib" path="C:/adt-bundle-windows-x86_64/sdk/extras/android/support/v13/android-support-v13.jar"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CustomAppAdds"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

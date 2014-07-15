@@ -295,6 +295,27 @@
             android:label="@string/app_name" >
             
         </activity>
+        
+        <activity
+            android:name="com.probe.probe.AppAdds"
+            android:exported="false"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+        <activity
+            android:name="com.probe.probe.ButtonDrawableTop"
+            android:exported="false"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+         <activity
+            android:name="com.probe.probe.HorizontalScroll"
+            android:exported="false"
+            android:label="@string/app_name" >
+            
+        </activity>
     </application>
 
 </manifest>
